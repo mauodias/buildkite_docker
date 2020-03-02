@@ -9,7 +9,7 @@ def setup():
         step(script)
 
 def step(script):
-    print('''  - label: ":rocket: {ntpath.basename(script)}"
+    print(f'''  - label: ":rocket: {ntpath.basename(script)}"
     command: "./{script}"
 
   - wait
