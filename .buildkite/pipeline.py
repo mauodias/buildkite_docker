@@ -11,9 +11,6 @@ def setup():
 def step(script):
     print(f'''  - label: ":rocket: {ntpath.basename(script)}"
     command: "./{script}"
-    plugins:
-      - docker:
-          image: python:3
 ''')
 
 
